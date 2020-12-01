@@ -1,0 +1,9 @@
+筛选数组、json数组 数据时，如果只要 对应的数据，可以使用  过滤函数遍历。
+let result = (遍历的数组对象).filter((item,index,当前数组))
+【注意】一定要有返回值 true、false，并接受新数组；
+result = data.filter(item =>{
+						// console.log(item);
+						for (const key in item) {
+							return(key != 'id' && key.indexOf(type) != -1)
+						}
+					})
